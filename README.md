@@ -4,10 +4,13 @@ Type definitions and a syntax plugin for writing FiveM and RedM resources (CfxLu
 
 It gives you:
 
-- **Natives** for GTA V, RDR3 and the shared CFX namespace, regenerated weekly from [rage-lua-natives](https://github.com/overextended/rage-lua-natives).
+- **Natives** for GTA V, RDR3 and the shared CFX namespace, regenerated weekly from [lua-cfx-natives](https://github.com/AlMahllawi/lua-cfx-natives).
 - **Runtime globals**: `Citizen`, threads and timers, events, `exports`, state bags (`GlobalState`, `LocalPlayer`, `Entity()`, `Player()`), NUI, `promise`, `json`, `msgpack`, and vector/quaternion types.
 - **Manifest typing**: known `fxmanifest.lua` / `__resource.lua` directives are typed inside manifest files only, and custom directives don't raise errors.
 - **CfxLua syntax** support: backtick hashes, compound assignment (`+=`, `<<=`, …), safe navigation (`foo?.bar`, `foo?[bar]`) and C-style `/* */` comments.
+
+> [!TIP]
+> See [ExampleResource](https://github.com/AlMahllawi/CFXResourceTemplate) for a complete resource that is set up with this addon.
 
 ## Setup
 
@@ -16,7 +19,7 @@ It gives you:
 Clone it somewhere permanent:
 
 ```sh
-git clone https://github.com/overextended/fivem-lls-addon.git ~/cfx-luals-addon
+git clone https://github.com/AlMahllawi/cfx-luals-addon.git ~/cfx-luals-addon
 ```
 
 Run `git pull` inside that folder to update it later.

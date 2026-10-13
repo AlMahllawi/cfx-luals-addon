@@ -9,7 +9,7 @@ jobs:
   natives:
     permissions:
       contents: write
-    uses: overextended/rage-lua-natives/.github/workflows/generate.yml@main
+    uses: AlMahllawi/lua-cfx-natives/.github/workflows/generate.yml@main
     with:
       native-sets: gta rdr3
       path: library/natives
